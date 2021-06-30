@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+int M,N,temp1,temp2;
+scanf("%d %d",&M,&N);
+temp1=M,temp2=N;
+while(M!=N)
+{
+if(M>N)
+M=M-N;
+else
+N=N-M;
+}
+printf("M when multipled to a smallest integer it is a multiple of N",temp2/N);
+return 0;
+}
