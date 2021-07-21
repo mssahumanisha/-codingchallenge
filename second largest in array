@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+int largest=INT_MIN;
+int secondlargest=INT_MIN;
+int arr[10];
+int n,i;
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+    scanf("%d",&arr[i]);
+}  
+/*input array elements*/
+
+//logic
+for(i=0;i<n;i++)
+{ if(largest<arr[i])
+{secondlargest=largest;
+    largest=arr[i];
+    
+}
+else if(arr[i]<largest && arr[i]>secondlargest)
+
+{ 
+    secondlargest=arr[i];
+    
+}
+
+}
+printf("second largest:%d",secondlargest);
+return 0;
+}
